@@ -16,9 +16,10 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              With a strong foundation in web development, I specialize in
+              building responsive, accessible, and high-performance web
+              applications using modern technologies like HTML, CSS, JavaScript,
+              and React.
             </p>
 
             <p className="text-muted-foreground">
@@ -35,7 +36,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="https://internshala.com/download/resume"
+                download=""
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -52,8 +54,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Web Development</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Creating responsive full-stack websites and web applications
+                    using modern technologies and frameworks.
                   </p>
                 </div>
               </div>
@@ -66,8 +68,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX Design</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Designing intuitive, user-centric interfaces and delivering
+                    seamless digital experiences.
                   </p>
                 </div>
               </div>
@@ -81,8 +83,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Handling projects end-to-end using agile workflows and
+                    efficient development practices.
                   </p>
                 </div>
               </div>
