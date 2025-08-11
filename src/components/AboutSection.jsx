@@ -36,7 +36,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://internshala.com/download/resume"
+                href="c:\Users\mayank\Downloads\MayankGaur_InternshalaResume (5).pdf"
                 download=""
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
