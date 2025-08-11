@@ -23,28 +23,29 @@ export const ContactSection = () => {
 
     emailjs
       .sendForm(
-        "service_qijgqka", // EmailJS service ID
-        "template_52dymk8", // EmailJS template ID
+        "service_qijgqka",
+        "template_52dymk8",
         e.target,
-        "n3IYsrNelUZcHIUft" // EmailJS public key
+        "n3IYsrNelUZcHIUft"
       )
       .then(
-        (result) => {
+        () => {
           toast({
             title: "Message sent!",
             description:
               "Thank you for your message. I'll get back to you soon.",
           });
-          setIsSubmitting(false);
         },
-        (error) => {
+        () => {
           toast({
             title: "Error!",
             description: "Failed to send message. Please try again.",
           });
-          setIsSubmitting(false);
         }
-      );
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -117,19 +118,15 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
+          <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Name
                 </label>
                 <input
@@ -137,7 +134,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="John..."
                 />
               </div>
@@ -147,7 +144,6 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Email
                 </label>
                 <input
@@ -155,7 +151,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="john@gmail.com"
                 />
               </div>
@@ -165,14 +161,13 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
