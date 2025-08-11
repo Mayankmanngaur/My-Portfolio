@@ -36,8 +36,10 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="c:\Users\mayank\Downloads\MayankGaur_InternshalaResume (5).pdf"
-                download=""
+                a
+                href="/Mayank_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
