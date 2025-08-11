@@ -7,8 +7,8 @@ const projects = [
     description: "A Portfolio page app using React and Tailwind.",
     image: "./s1.png",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "#https://my-portfolio-zeta-two-69.vercel.app/",
+    githubUrl: "https://github.com/Mayankmanngaur/SpotifyClone-MusicBox",
   },
   {
     id: 2,
