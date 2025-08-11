@@ -13,11 +13,11 @@ const projects = [
   {
     id: 2,
     title: "a landing page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    description: "A beautiful Music Box page app using html, css, js.",
     image: "./s2.png",
     tags: ["html", "css", "js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://spotify-clone-music-box.vercel.app/",
+    githubUrl: "https://github.com/Mayankmanngaur/SpotifyClone-MusicBox",
   },
   {
     id: 3,
