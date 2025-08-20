@@ -3,12 +3,13 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Portfolio Page",
-    description: "A Portfolio page app using React and Tailwind.",
-    image: "./s1.png",
-    tags: ["React", "TailwindCSS"],
-    demoUrl: "#https://my-portfolio-zeta-two-69.vercel.app/",
-    githubUrl: "https://github.com/Mayankmanngaur/SpotifyClone-MusicBox",
+    title: "wanderlust(airbnb clone)",
+    description:
+      "A full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS templates.",
+    image: "./s3.png",
+    tags: ["Node.js", "Express", "MongoDB", "EJS"],
+    demoUrl: "https://airbnb-wanderlust-atxa.onrender.com/listings",
+    githubUrl: "https://github.com/Mayankmanngaur/airbnb-wanderLust-.git",
   },
   {
     id: 2,
